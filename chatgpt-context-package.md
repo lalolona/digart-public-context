@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-17T19:46:26.388Z
+**Generado:** 2026-07-17T23:05:27.097Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** b5210d2
+**Commit de origen:** 197353d
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -22,15 +22,15 @@
 
 | Fuente | Ruta | Huella |
 |---|---|---|
-| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `cc10cba4e27c` |
-| C-02 | `project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md` | `b9e838804194` |
-| G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `e6de8f7a5d4e` |
-| P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `3252c5673c6b` |
-| P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `d5cf174be8d4` |
-| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `39b6522b5f90` |
-| O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `d774299660f6` |
-| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `2a27233fa174` |
-| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `3d098a34c6ea` |
+| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `e55478e42da1` |
+| C-02 | `project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md` | `bbfb3fba21e0` |
+| G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `fbb0b2989234` |
+| P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `ef1e2b5c4465` |
+| P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `ca1df531912a` |
+| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `33b8c17ef6e7` |
+| O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `ac9a5ee20fc7` |
+| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `aad069b2686a` |
+| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `dee104cea9ff` |
 
 ## Instrucciones de uso para ChatGPT
 
