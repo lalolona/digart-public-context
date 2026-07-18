@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-17T23:05:27.097Z
+**Generado:** 2026-07-18T18:14:47.381Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 197353d
+**Commit de origen:** 0a4b1fd
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -22,15 +22,15 @@
 
 | Fuente | Ruta | Huella |
 |---|---|---|
-| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `e55478e42da1` |
+| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `5117749fcbc1` |
 | C-02 | `project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md` | `bbfb3fba21e0` |
 | G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `fbb0b2989234` |
 | P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `ef1e2b5c4465` |
-| P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `ca1df531912a` |
-| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `33b8c17ef6e7` |
+| P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `f9958c34d0c0` |
+| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `542cfe906266` |
 | O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `ac9a5ee20fc7` |
-| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `aad069b2686a` |
-| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `dee104cea9ff` |
+| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `e5fee913fddd` |
+| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `f2e5ae52f806` |
 
 ## Instrucciones de uso para ChatGPT
 
@@ -75,11 +75,11 @@ En desarrollo. Rama Git activa de referencia: `feature/navigation-v2`. El sprint
 
 ## Sprint / siguiente paso vigente
 
-El sprint cerrado requiere autorización del propietario para iniciar el siguiente. Pendiente inmediato: desarrollar rutas individuales de Portafolio y contenido editorial de Blog cuando exista contenido aprobado. Pendientes de decisión de gobernanza (no ejecutables sin decisión oficial): incorporación normativa del remapeo Responsive RWD-08 a P-02 §16; traducciones visuales pendientes del Principio Fundacional 6 (parcial) y del Principio 12 (C-01 §11).
+El sprint cerrado requiere autorización del propietario para iniciar el siguiente. Pendiente inmediato: desarrollar rutas individuales de Portafolio y contenido editorial de Blog cuando exista contenido aprobado. Sin pendientes de decisión de gobernanza vigentes tras D-049.
 
 ## Implementaciones concluidas relevantes
 
-Navegación v2 (D-042) y Especialidades de dos niveles (D-043); Blog editorial basado en Markdown v1 (D-045); Contacto v2 con envío SMTP autenticado (D-046); Portafolio v1, refinamiento premium del Footer y formato editorial de artículos del Blog (D-047); cierre de la expansión visual de Especialidades y renovación visual de Home con recursos finales WebP (D-048).
+Navegación v2 (D-042) y Especialidades de dos niveles (D-043); Blog editorial basado en Markdown v1 (D-045); Contacto v2 con envío SMTP autenticado (D-046); Portafolio v1, refinamiento premium del Footer y formato editorial de artículos del Blog (D-047); cierre de la expansión visual de Especialidades y renovación visual de Home con recursos finales WebP (D-048); incorporación normativa del remapeo Responsive RWD-08 a P-02 §16 y revisión formal de C-01 §11 con las traducciones visuales del Principio 6 y del Principio 12 (D-049).
 
 ## Reglas operativas para asistentes de IA
 
@@ -103,7 +103,7 @@ Principios de trabajo: Documentation First, Architecture First, Reuse Before Cre
 - **O-01** (`project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md`, Estado general, Fase actual, Estado del Frontend) — estado vigente del proyecto.
 - **O-02** (`project/04-OPERATIONS/O-02-CURRENT-SPRINT.md`, Sprint, Siguiente acción) — estado y siguiente paso del sprint.
 - **O-04** (`project/04-OPERATIONS/O-04-ROADMAP.md`, Pendientes inmediatos, Pendientes de decisión de gobernanza) — cola priorizada de pendientes.
-- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, 2026-07-14 a 2026-07-17 (D-042 a D-048)) — decisiones oficiales recientes.
+- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, 2026-07-14 a 2026-07-18 (D-042 a D-049)) — decisiones oficiales recientes.
 
 ---
 
