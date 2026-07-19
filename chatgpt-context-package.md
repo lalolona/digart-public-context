@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-19T13:21:15.000Z
+**Generado:** 2026-07-19T15:17:57.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** f8c45451d2fba66d8e408d9a17e9a09b9ed2913a
+**Commit de origen:** 9b26207d7b07e380a6da11b4fe291d4994146ed1
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -68,21 +68,29 @@ Derivadas del Framework Profile operativo (`dcos/profiles/digart-framework-profi
 
 ## Estado actual del proyecto
 
-En desarrollo. Sitio Web Corporativo digart.mx. Rama Git activa: `feature/navigation-v2`. La navegación v2, las páginas institucionales, Especialidades y el Blog Editorial v2 están implementados localmente. El sprint del Blog Editorial v2 queda cerrado con validación técnica (60/60 pruebas) y visual Desktop/Mobile aprobada.
+En desarrollo. Sitio Web Corporativo digart.mx. Rama Git activa: `feature/navigation-v2`. La navegación v2, las páginas institucionales, Especialidades y el Blog Editorial v2 están implementados localmente. El sprint del Blog Editorial v2 queda cerrado con validación técnica (60/60 pruebas) y visual Desktop/Mobile aprobada. La infraestructura de Analytics + SEO técnico + preparación para producción v1.0 queda implementada y certificada mediante cierre certificado de DCOS — **D-051**: runtime y configuración centralizada por entorno, Google Tag Manager preparado sin IDs reales, consentimiento denegado por defecto y SEO técnico completo, sin recopilación activa en local ni en `html.digart.mx`.
 
-El sprint "Blog Editorial v2" está **cerrado** (O-02).
+El sprint "Analytics + SEO técnico + preparación para producción v1.0" está **cerrado** (O-02).
 
 ## Sprint / siguiente paso vigente
 
-Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente sprint.
+Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente sprint (configuración externa de Google y Release Candidate de producción — ver O-04).
 
 **Pendientes priorizados vigentes (O-04):**
 
 - Desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados.
+- Crear la propiedad GA4 y su flujo web.
+3. Crear el contenedor de Google Tag Manager.
+4. Configurar etiquetas y eventos clave dentro de GTM.
+5. Proporcionar los IDs reales mediante `config/site.local.php` (fuera de Git, nunca en el repositorio).
+6. Verificar la propiedad del sitio en Search Console y enviar el sitemap.
+7. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx`.
+8. Validar Analytics y Consent Mode con herramientas de Google (Tag Assistant, DebugView).
+9. Ejecutar el Release Candidate de producción.
+10. Preparar las redirecciones desde el WordPress anterior.
 
 ## Implementaciones concluidas relevantes
 
-- **D-043** — Arquitectura de Especialidades de dos niveles aprobada — **D-043**. `/especialidades.php` se establece como página matriz de soluciones por industria y se aprueban las rutas `/digart-business.php`, `/digart-medical.php` y `/digart-food.php`. Cada ruta profundi…
 - **D-044** — DCOS Framework Profile se alinea con el Mapa de Autoridad oficial de G-02 §5 — **D-044**. El perfil deja de usar autoridades heredadas y declara exclusivamente las catorce autoridades canónicas del corpus vigente.
 - **D-045** — Se aprueba Blog editorial basado en Markdown v1 — **D-045**: publicaciones administradas como archivos versionados en `content/blog/`, índice automático (`public/blog.php`) y una plantilla reutilizable de artículo (`public/articulo.php`); sin base de datos ni …
 - **D-046** — Se aprueba Contacto v2 — **D-046**: formulario de proyecto con envío SMTP autenticado, sin base de datos, configuración de credenciales fuera de Git y controles mínimos de seguridad y privacidad. Implementados localmente el rediseño de `public/contacto.php` (H…
@@ -90,6 +98,7 @@ Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente
 - **D-048** — Se aprueba el cierre de la expansión visual de Especialidades y la renovación visual del Home — **D-048**. Las páginas DIGART Business, DIGART Medical y DIGART Food integran sus recursos finales WebP; la Home incorpora recursos finales WebP para Hero, El inici…
 - **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
 - **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
+- **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
 
 ## Reglas operativas para asistentes de IA
 
