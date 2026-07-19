@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-18T18:14:47.381Z
+**Generado:** 2026-07-19T01:30:44.313Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 0a4b1fd
+**Commit de origen:** 5dabc04
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -27,10 +27,10 @@
 | G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `fbb0b2989234` |
 | P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `ef1e2b5c4465` |
 | P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `f9958c34d0c0` |
-| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `542cfe906266` |
-| O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `ac9a5ee20fc7` |
-| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `e5fee913fddd` |
-| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `f2e5ae52f806` |
+| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `724d52e33a2b` |
+| O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `374ecd9a2b69` |
+| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `c5224451c1fa` |
+| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `8f4d29174143` |
 
 ## Instrucciones de uso para ChatGPT
 
@@ -71,15 +71,15 @@ Derivadas del Framework Profile operativo (`dcos/profiles/digart-framework-profi
 
 ## Estado actual del proyecto
 
-En desarrollo. Rama Git activa de referencia: `feature/navigation-v2`. El sprint "Expansión de páginas institucionales y Especialidades v1.0" está **cerrado** (D-048): navegación v2, páginas institucionales y la capa de Especialidades (matriz, Business, Medical, Food) están implementadas localmente con recursos finales y QA transversal aprobado. Páginas activas: Home, Nosotros, Servicios, Especialidades (+ Business/Medical/Food), Portafolio, Blog, Contacto y Aviso de privacidad.
+En desarrollo. Rama Git activa de referencia: `feature/navigation-v2`. El sprint "Blog Editorial v2" está **cerrado**: siete publicaciones con imágenes WebP finales, portada cronológica, plantilla individual, navegación, relacionados, TOC y SEO editorial están implementados localmente con 60/60 pruebas y QA visual Desktop/Mobile aprobado. Páginas activas: Home, Nosotros, Servicios, Especialidades (+ Business/Medical/Food), Portafolio, Blog, Contacto y Aviso de privacidad.
 
 ## Sprint / siguiente paso vigente
 
-El sprint cerrado requiere autorización del propietario para iniciar el siguiente. Pendiente inmediato: desarrollar rutas individuales de Portafolio y contenido editorial de Blog cuando exista contenido aprobado. Sin pendientes de decisión de gobernanza vigentes tras D-049.
+El sprint cerrado requiere autorización del propietario para iniciar el siguiente. Próximo bloque recomendado: desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados. Sin pendientes de decisión de gobernanza vigentes tras D-049.
 
 ## Implementaciones concluidas relevantes
 
-Navegación v2 (D-042) y Especialidades de dos niveles (D-043); Blog editorial basado en Markdown v1 (D-045); Contacto v2 con envío SMTP autenticado (D-046); Portafolio v1, refinamiento premium del Footer y formato editorial de artículos del Blog (D-047); cierre de la expansión visual de Especialidades y renovación visual de Home con recursos finales WebP (D-048); incorporación normativa del remapeo Responsive RWD-08 a P-02 §16 y revisión formal de C-01 §11 con las traducciones visuales del Principio 6 y del Principio 12 (D-049).
+Navegación v2 (D-042) y Especialidades de dos niveles (D-043); base Markdown del Blog (D-045); Contacto v2 con envío SMTP autenticado (D-046); Portafolio v1 y formato editorial de artículos (D-047); cierre visual de Especialidades y Home (D-048); incorporación normativa de RWD-08 y traducciones visuales fundacionales (D-049); Blog Editorial v2 cerrado con contrato validable, siete publicaciones, principal cronológico, tiempo de lectura automático, Grid uniforme, navegación, relacionados, TOC, SEO editorial y siete WebP finales.
 
 ## Reglas operativas para asistentes de IA
 
@@ -103,7 +103,7 @@ Principios de trabajo: Documentation First, Architecture First, Reuse Before Cre
 - **O-01** (`project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md`, Estado general, Fase actual, Estado del Frontend) — estado vigente del proyecto.
 - **O-02** (`project/04-OPERATIONS/O-02-CURRENT-SPRINT.md`, Sprint, Siguiente acción) — estado y siguiente paso del sprint.
 - **O-04** (`project/04-OPERATIONS/O-04-ROADMAP.md`, Pendientes inmediatos, Pendientes de decisión de gobernanza) — cola priorizada de pendientes.
-- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, 2026-07-14 a 2026-07-18 (D-042 a D-049)) — decisiones oficiales recientes.
+- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, 2026-07-14 a 2026-07-18 (D-042 a D-049 y cierre Blog Editorial v2)) — decisiones oficiales e hitos recientes.
 
 ---
 
