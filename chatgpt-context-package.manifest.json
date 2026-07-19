@@ -1,6 +1,6 @@
 {
   "formatVersion": "1.0",
-  "sourceCommit": "315c9b1e92671423a59b077e0d472a84d5e39917",
+  "sourceCommit": "f8c45451d2fba66d8e408d9a17e9a09b9ed2913a",
   "sources": [
     {
       "id": "C-01",
@@ -75,6 +75,6 @@
   ],
   "package": {
     "path": "dcos/public-context/chatgpt-context-package.md",
-    "sha256": "e59eb3d257f4aa5d5568aa6d89c1e42b00e6f21aa905ad6af1afdc8750f95332"
+    "sha256": "c5c6ee7de1bc4d2f9bf492851a01a322b4337b33b90e1a41aa8bc629b94f3fe6"
   }
 }

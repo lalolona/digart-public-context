@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-19T03:29:52.000Z
+**Generado:** 2026-07-19T13:21:15.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 315c9b1e92671423a59b077e0d472a84d5e39917
+**Commit de origen:** f8c45451d2fba66d8e408d9a17e9a09b9ed2913a
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
