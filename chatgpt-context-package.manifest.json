@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.0",
+  "sourceCommit": "0aba096866232f8277e07ec30cf67452192320f5",
+  "sources": [
+    {
+      "id": "C-01",
+      "path": "project/01-CONSTITUTION/C-01-IDENTITY.md",
+      "sha256": "5117749fcbc17149fb33843fcf1367dfb198a595cf5c2eb4c3290bdc25aa139e"
+    },
+    {
+      "id": "C-02",
+      "path": "project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md",
+      "sha256": "bbfb3fba21e0299a2988ed3f496a496c3fbac4cb70258ba010010ec07626022e"
+    },
+    {
+      "id": "G-01",
+      "path": "project/02-GOVERNANCE/G-01-GOVERNANCE.md",
+      "sha256": "f3fe7aa88e7e4dd616b3f94be0a6a2bfa0951c6cbb28d48590ba822f086fcc97"
+    },
+    {
+      "id": "G-02",
+      "path": "project/02-GOVERNANCE/G-02-DOCUMENTATION-ARCHITECTURE.md",
+      "sha256": "c0be1db0245a641415b4f18cb7756932b3b985de33c1fd1ae4ad7124812f8dbb"
+    },
+    {
+      "id": "G-03",
+      "path": "project/02-GOVERNANCE/G-03-METHODOLOGY.md",
+      "sha256": "c4c7e42a78d824c760d068dc4ce1a1f0965a9496824be8ddb2b8d4fefcad8ecc"
+    },
+    {
+      "id": "O-01",
+      "path": "project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md",
+      "sha256": "ab40637cbd5c1a8a8ac47062eb6af7c0d4f34546806442ade9ff1b0770771516"
+    },
+    {
+      "id": "O-02",
+      "path": "project/04-OPERATIONS/O-02-CURRENT-SPRINT.md",
+      "sha256": "374ecd9a2b69e252ec083aa46df0b1437cd0c3a97f3ac9450810bdc393344ff6"
+    },
+    {
+      "id": "O-03",
+      "path": "project/04-OPERATIONS/O-03-BACKLOG.md",
+      "sha256": "1183fe288b32aa949beed2a9cfa283671036bd2c9ea25b1dffb3202dcb2c78f4"
+    },
+    {
+      "id": "O-04",
+      "path": "project/04-OPERATIONS/O-04-ROADMAP.md",
+      "sha256": "c5224451c1fae38e4fcbc61af6ae28e17cad43f7aae07b966a7d62aa8c2d3b8c"
+    },
+    {
+      "id": "O-05",
+      "path": "project/04-OPERATIONS/O-05-INCIDENTS.md",
+      "sha256": "1aec37ebdb06f6c6305e080c492841c9bb8ff6eb8ff955d3a4aff466b0c12bfb"
+    },
+    {
+      "id": "O-06",
+      "path": "project/04-OPERATIONS/O-06-HISTORY.md",
+      "sha256": "4b5370cfd73b3ef29b2ac3f1eaf160a13a8b257781b9bc7bed48348560b3a641"
+    },
+    {
+      "id": "P-01",
+      "path": "project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md",
+      "sha256": "ef1e2b5c4465250d39ff648f8b8a8766927e498fae0028e5e850de57695675c3"
+    },
+    {
+      "id": "P-02",
+      "path": "project/03-PRODUCT/P-02-FRONTEND.md",
+      "sha256": "f9958c34d0c05ebba5879b62b2f798c0f99a3fc3531ccf8cc7b61b21f5d4b6fe"
+    },
+    {
+      "id": "P-03",
+      "path": "project/03-PRODUCT/P-03-HOME.md",
+      "sha256": "ccd59a0d44e8bf9adfe05770215b57e597fffc16e00657fe1124b6c046aab2e1"
+    }
+  ],
+  "package": {
+    "path": "dcos/public-context/chatgpt-context-package.md",
+    "sha256": "9e2f706d3ff2a03963b0903328f2c61606933e0bbac3df46693c165cb68e2aed"
+  }
+}

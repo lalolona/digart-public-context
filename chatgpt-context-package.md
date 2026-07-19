@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-19T01:30:44.313Z
-**Rama de origen:** feature/navigation-v2
-**Commit de origen:** 5dabc04
+**Generado:** 2026-07-19T03:13:03.000Z
+**Rama de origen:** HEAD
+**Commit de origen:** 0aba096866232f8277e07ec30cf67452192320f5
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -16,7 +16,8 @@
 - **Metadatos técnicos** (fecha, rama, commit): dinámicos, recalculados en cada generación.
 - **Autoridades documentales**: derivadas automáticamente del Framework Profile vigente (`dcos/profiles/digart-framework-profile.js`).
 - **Trazabilidad** ("Fuentes utilizadas y trazabilidad"): parcialmente derivada — rutas resueltas en tiempo de ejecución; secciones y notas descriptivas curadas manualmente.
-- **Secciones narrativas** (Identidad, Arquitectura comercial, Arquitectura técnica, Reglas Frontend, Estado actual, Sprint/siguiente paso, Implementaciones concluidas, Reglas operativas, Restricciones): **curadas manualmente**, protegidas por huella SHA-256 de las fuentes oficiales que las respaldan. Si una fuente narrativa cambia, el generador falla (`SINTESIS_CURADA_DESALINEADA`) hasta que la síntesis se revise y la huella se apruebe de forma explícita.
+- **Secciones narrativas curadas** (Identidad, Arquitectura comercial, Arquitectura técnica, Reglas Frontend, Reglas operativas, Restricciones): **curadas manualmente**, protegidas por huella SHA-256 de las fuentes oficiales que las respaldan. Si una fuente narrativa cambia, el generador falla (`SINTESIS_CURADA_DESALINEADA`) hasta que la síntesis se revise y la huella se apruebe de forma explícita.
+- **Secciones de estado operativo** (Estado actual, Sprint/siguiente paso, Implementaciones concluidas): **derivadas automáticamente** en cada generación desde O-01 a O-06 (`dcos/closure/operational-state-resolver.js`, D-050), nunca literales fijados en este módulo. Un elemento resuelto no se presenta como pendiente, una decisión sustituida no se presenta como vigente y toda contradicción entre autoridades detiene la generación.
 
 **Huellas de fuentes narrativas (SHA-256, primeros 12 caracteres):**
 
@@ -24,13 +25,9 @@
 |---|---|---|
 | C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `5117749fcbc1` |
 | C-02 | `project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md` | `bbfb3fba21e0` |
-| G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `fbb0b2989234` |
+| G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `c4c7e42a78d8` |
 | P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `ef1e2b5c4465` |
 | P-02 | `project/03-PRODUCT/P-02-FRONTEND.md` | `f9958c34d0c0` |
-| O-01 | `project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md` | `724d52e33a2b` |
-| O-02 | `project/04-OPERATIONS/O-02-CURRENT-SPRINT.md` | `374ecd9a2b69` |
-| O-04 | `project/04-OPERATIONS/O-04-ROADMAP.md` | `c5224451c1fa` |
-| O-06 | `project/04-OPERATIONS/O-06-HISTORY.md` | `8f4d29174143` |
 
 ## Instrucciones de uso para ChatGPT
 
@@ -71,15 +68,28 @@ Derivadas del Framework Profile operativo (`dcos/profiles/digart-framework-profi
 
 ## Estado actual del proyecto
 
-En desarrollo. Rama Git activa de referencia: `feature/navigation-v2`. El sprint "Blog Editorial v2" está **cerrado**: siete publicaciones con imágenes WebP finales, portada cronológica, plantilla individual, navegación, relacionados, TOC y SEO editorial están implementados localmente con 60/60 pruebas y QA visual Desktop/Mobile aprobado. Páginas activas: Home, Nosotros, Servicios, Especialidades (+ Business/Medical/Food), Portafolio, Blog, Contacto y Aviso de privacidad.
+En desarrollo. Sitio Web Corporativo digart.mx. Rama Git activa: `feature/navigation-v2`. La navegación v2, las páginas institucionales, Especialidades y el Blog Editorial v2 están implementados localmente. El sprint del Blog Editorial v2 queda cerrado con validación técnica (60/60 pruebas) y visual Desktop/Mobile aprobada.
+
+El sprint "Blog Editorial v2" está **cerrado** (O-02).
 
 ## Sprint / siguiente paso vigente
 
-El sprint cerrado requiere autorización del propietario para iniciar el siguiente. Próximo bloque recomendado: desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados. Sin pendientes de decisión de gobernanza vigentes tras D-049.
+Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente sprint.
+
+**Pendientes priorizados vigentes (O-04):**
+
+- Desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados.
 
 ## Implementaciones concluidas relevantes
 
-Navegación v2 (D-042) y Especialidades de dos niveles (D-043); base Markdown del Blog (D-045); Contacto v2 con envío SMTP autenticado (D-046); Portafolio v1 y formato editorial de artículos (D-047); cierre visual de Especialidades y Home (D-048); incorporación normativa de RWD-08 y traducciones visuales fundacionales (D-049); Blog Editorial v2 cerrado con contrato validable, siete publicaciones, principal cronológico, tiempo de lectura automático, Grid uniforme, navegación, relacionados, TOC, SEO editorial y siete WebP finales.
+- **D-043** — Arquitectura de Especialidades de dos niveles aprobada — **D-043**. `/especialidades.php` se establece como página matriz de soluciones por industria y se aprueban las rutas `/digart-business.php`, `/digart-medical.php` y `/digart-food.php`. Cada ruta profundi…
+- **D-044** — DCOS Framework Profile se alinea con el Mapa de Autoridad oficial de G-02 §5 — **D-044**. El perfil deja de usar autoridades heredadas y declara exclusivamente las catorce autoridades canónicas del corpus vigente.
+- **D-045** — Se aprueba Blog editorial basado en Markdown v1 — **D-045**: publicaciones administradas como archivos versionados en `content/blog/`, índice automático (`public/blog.php`) y una plantilla reutilizable de artículo (`public/articulo.php`); sin base de datos ni …
+- **D-046** — Se aprueba Contacto v2 — **D-046**: formulario de proyecto con envío SMTP autenticado, sin base de datos, configuración de credenciales fuera de Git y controles mínimos de seguridad y privacidad. Implementados localmente el rediseño de `public/contacto.php` (H…
+- **D-047** — Se aprueba Portafolio v1 — **D-047**: vitrina editorial de seis casos reales, implementada localmente en `public/portafolio.php` mediante los Patterns `portfolio-hero`, `portfolio-introduction`, `portfolio-grid` y `portfolio-closing`. Se integran los seis recu…
+- **D-048** — Se aprueba el cierre de la expansión visual de Especialidades y la renovación visual del Home — **D-048**. Las páginas DIGART Business, DIGART Medical y DIGART Food integran sus recursos finales WebP; la Home incorpora recursos finales WebP para Hero, El inici…
+- **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
+- **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
 
 ## Reglas operativas para asistentes de IA
 
@@ -100,10 +110,10 @@ Principios de trabajo: Documentation First, Architecture First, Reuse Before Cre
 - **G-03** (`project/02-GOVERNANCE/G-03-METHODOLOGY.md`, §3, §9) — principios de trabajo y flujo Git.
 - **P-01** (`project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md`, §3-4, §8) — stack, arquitectura en capas y entornos.
 - **P-02** (`project/03-PRODUCT/P-02-FRONTEND.md`, §4-5, §15, §17, §19) — componentes, tokens, motion, accesibilidad y gobernanza de crecimiento.
-- **O-01** (`project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md`, Estado general, Fase actual, Estado del Frontend) — estado vigente del proyecto.
-- **O-02** (`project/04-OPERATIONS/O-02-CURRENT-SPRINT.md`, Sprint, Siguiente acción) — estado y siguiente paso del sprint.
-- **O-04** (`project/04-OPERATIONS/O-04-ROADMAP.md`, Pendientes inmediatos, Pendientes de decisión de gobernanza) — cola priorizada de pendientes.
-- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, 2026-07-14 a 2026-07-18 (D-042 a D-049 y cierre Blog Editorial v2)) — decisiones oficiales e hitos recientes.
+- **O-01** (`project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md`, Estado general, Sprint vigente) — estado vigente del proyecto (derivado, D-050).
+- **O-02** (`project/04-OPERATIONS/O-02-CURRENT-SPRINT.md`, Sprint, Siguiente acción) — estado y siguiente paso del sprint (derivado, D-050).
+- **O-04** (`project/04-OPERATIONS/O-04-ROADMAP.md`, Pendientes inmediatos, Pendientes de decisión de gobernanza) — cola priorizada de pendientes (derivado, D-050).
+- **O-06** (`project/04-OPERATIONS/O-06-HISTORY.md`, Decisiones e historia) — decisiones oficiales e hitos recientes (derivado, D-050).
 
 ---
 
