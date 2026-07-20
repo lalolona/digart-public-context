@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-20T17:23:37.000Z
+**Generado:** 2026-07-20T17:59:25.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 9a490f863674288bc6dc34407562b80b8671a42c
+**Commit de origen:** 149a4c7e58a8450781aa1f1337996ad350581012
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -74,7 +74,7 @@ El sprint "Analytics + SEO técnico + preparación para producción v1.0" está 
 
 ## Sprint / siguiente paso vigente
 
-Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica y bloque de Search Console cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
+Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console y bloque de la página 404 personalizada cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
 
 **Pendientes priorizados vigentes (O-04):**
 
@@ -90,7 +90,6 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 
 ## Implementaciones concluidas relevantes
 
-- **D-048** — Se aprueba el cierre de la expansión visual de Especialidades y la renovación visual del Home — **D-048**. Las páginas DIGART Business, DIGART Medical y DIGART Food integran sus recursos finales WebP; la Home incorpora recursos finales WebP para Hero, El inici…
 - **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
 - **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
 - **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
@@ -98,6 +97,7 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 - **D-053** — Se certifica el despliegue en producción de un bloque de correcciones sobre Especialidades, Home y Contacto — **D-053**. La decisión aprueba conjuntamente: (a) la incorporación de un campo de teléfono obligatorio (`name="phone"`, `type="tel"`) al formulario de…
 - **D-054** — Se certifica la normalización canónica del dominio y el tratamiento de URLs históricas del WordPress retirado — **D-054**, sobre la base de la auditoría no destructiva de dos respaldos completos de cPanel (30 de mayo y 17 de julio de 2026, comparados fila por …
 - **D-055** — Se certifica el cierre del bloque de Google Search Console y la validación en tiempo real de la canonicalización de la Home — **D-055**. La decisión aprueba conjuntamente: (a) la creación y verificación de la propiedad de dominio `digart.mx` en Google Search C…
+- **D-056** — Se certifica la activación en producción de la página 404 personalizada — **D-056**. La decisión aprueba conjuntamente: (a) la incorporación de la directiva `ErrorDocument 404 /404.php` en `public/.htaccess` (nueva sección 5, reescritura interna sin redirecció…
 
 ## Reglas operativas para asistentes de IA
 
