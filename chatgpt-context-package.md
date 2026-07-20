@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-20T17:59:25.000Z
+**Generado:** 2026-07-20T18:20:16.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 149a4c7e58a8450781aa1f1337996ad350581012
+**Commit de origen:** fbbb4d4bb6bf4fa4c871f57560287a11b894f6f2
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -74,7 +74,7 @@ El sprint "Analytics + SEO técnico + preparación para producción v1.0" está 
 
 ## Sprint / siguiente paso vigente
 
-Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console y bloque de la página 404 personalizada cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
+Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console, bloque de la página 404 personalizada y bloque de retiro de html.digart.mx cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
 
 **Pendientes priorizados vigentes (O-04):**
 
@@ -85,12 +85,10 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 5. Dar seguimiento a errores, exclusiones o páginas descubiertas no indexadas.
 6. Revisar Core Web Vitals y rendimiento en Search Console cuando acumule datos suficientes.
 7. Validar en una fecha posterior si las URLs históricas 301 y 410 aparecen correctamente procesadas por Google.
-8. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx` (staging, no modificado por el despliegue de producción).
-9. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
+8. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
 
 ## Implementaciones concluidas relevantes
 
-- **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
 - **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
 - **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
 - **D-052** — Se certifica el despliegue de DIGART.MX HTML en producción (`https://digart.mx`) — **D-052**, ejecutando sobre producción real los pendientes de configuración externa que D-051 había dejado abiertos. La decisión aprueba conjuntamente: (a) el retiro del WordPre…
@@ -98,6 +96,7 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 - **D-054** — Se certifica la normalización canónica del dominio y el tratamiento de URLs históricas del WordPress retirado — **D-054**, sobre la base de la auditoría no destructiva de dos respaldos completos de cPanel (30 de mayo y 17 de julio de 2026, comparados fila por …
 - **D-055** — Se certifica el cierre del bloque de Google Search Console y la validación en tiempo real de la canonicalización de la Home — **D-055**. La decisión aprueba conjuntamente: (a) la creación y verificación de la propiedad de dominio `digart.mx` en Google Search C…
 - **D-056** — Se certifica la activación en producción de la página 404 personalizada — **D-056**. La decisión aprueba conjuntamente: (a) la incorporación de la directiva `ErrorDocument 404 /404.php` en `public/.htaccess` (nueva sección 5, reescritura interna sin redirecció…
+- **D-057** — Se certifica el retiro controlado del subdominio de staging `html.digart.mx` — **D-057**. Auditoría previa (misma fecha): document root en `[dato omitido]/html.digart.mx`, vacío de contenido real (solo `cgi-bin/` y `.well-known/acme-challenge/` autogenerados p…
 
 ## Reglas operativas para asistentes de IA
 
