@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-20T18:20:16.000Z
+**Generado:** 2026-07-20T19:09:11.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** fbbb4d4bb6bf4fa4c871f57560287a11b894f6f2
+**Commit de origen:** 17c7a10d07d3fbf1160a7f42e3c65a67afa66197
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -74,7 +74,7 @@ El sprint "Analytics + SEO técnico + preparación para producción v1.0" está 
 
 ## Sprint / siguiente paso vigente
 
-Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console, bloque de la página 404 personalizada y bloque de retiro de html.digart.mx cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
+Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console, bloque de la página 404 personalizada, bloque de retiro de html.digart.mx y bloque de retiro del clon obsoleto del servidor cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
 
 **Pendientes priorizados vigentes (O-04):**
 
@@ -89,7 +89,6 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 
 ## Implementaciones concluidas relevantes
 
-- **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
 - **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
 - **D-052** — Se certifica el despliegue de DIGART.MX HTML en producción (`https://digart.mx`) — **D-052**, ejecutando sobre producción real los pendientes de configuración externa que D-051 había dejado abiertos. La decisión aprueba conjuntamente: (a) el retiro del WordPre…
 - **D-053** — Se certifica el despliegue en producción de un bloque de correcciones sobre Especialidades, Home y Contacto — **D-053**. La decisión aprueba conjuntamente: (a) la incorporación de un campo de teléfono obligatorio (`name="phone"`, `type="tel"`) al formulario de…
@@ -97,6 +96,7 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 - **D-055** — Se certifica el cierre del bloque de Google Search Console y la validación en tiempo real de la canonicalización de la Home — **D-055**. La decisión aprueba conjuntamente: (a) la creación y verificación de la propiedad de dominio `digart.mx` en Google Search C…
 - **D-056** — Se certifica la activación en producción de la página 404 personalizada — **D-056**. La decisión aprueba conjuntamente: (a) la incorporación de la directiva `ErrorDocument 404 /404.php` en `public/.htaccess` (nueva sección 5, reescritura interna sin redirecció…
 - **D-057** — Se certifica el retiro controlado del subdominio de staging `html.digart.mx` — **D-057**. Auditoría previa (misma fecha): document root en `[dato omitido]/html.digart.mx`, vacío de contenido real (solo `cgi-bin/` y `.well-known/acme-challenge/` autogenerados p…
+- **D-058** — Se certifica el retiro controlado del clon obsoleto del servidor `~/repositories/digart.mx` — **D-058**. Auditoría previa (misma fecha): rama `feature/navigation-v2` en el commit `62ec51bbe4c7ccec3ab6fae2774245815b39f350`, confirmado ancestro directo de `HEAD`…
 
 ## Reglas operativas para asistentes de IA
 

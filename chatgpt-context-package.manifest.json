@@ -1,6 +1,6 @@
 {
   "formatVersion": "1.0",
-  "sourceCommit": "fbbb4d4bb6bf4fa4c871f57560287a11b894f6f2",
+  "sourceCommit": "17c7a10d07d3fbf1160a7f42e3c65a67afa66197",
   "sources": [
     {
       "id": "C-01",
@@ -30,12 +30,12 @@
     {
       "id": "O-01",
       "path": "project/04-OPERATIONS/O-01-PROJECT-SNAPSHOT.md",
-      "sha256": "5d52b6a66b394b393968362e49a922d3efc24d42f20fa807ee6963982efd225b"
+      "sha256": "ceaa2a847af16a6188d8472c520182f9cd5674eb00e8bc2240e2a55037334604"
     },
     {
       "id": "O-02",
       "path": "project/04-OPERATIONS/O-02-CURRENT-SPRINT.md",
-      "sha256": "700b07b1e3a1d440343f007105e5e12facee1578dcdbf6077250007ede9db52e"
+      "sha256": "258720a283831579003ebfed9bf569796485320da9fa871222c520887d94da79"
     },
     {
       "id": "O-03",
@@ -45,7 +45,7 @@
     {
       "id": "O-04",
       "path": "project/04-OPERATIONS/O-04-ROADMAP.md",
-      "sha256": "11d4f8777b63450675f37b1989ba9721ecdeba51106f4f7893a228ce5ccee7a0"
+      "sha256": "e4014fa8135b2e4fb5926354842f7b953bace2ae2cc96e6c37148d566ca953f2"
     },
     {
       "id": "O-05",
@@ -55,7 +55,7 @@
     {
       "id": "O-06",
       "path": "project/04-OPERATIONS/O-06-HISTORY.md",
-      "sha256": "6c95ee77844e92f0cf162b1653e48c86737e9dee6720374b3b8ebeaa30f0f95d"
+      "sha256": "9a1896ba3fd5cf1a4e5b4e67c811f419bfc1c184e5a4a5426e0ffa139563f94b"
     },
     {
       "id": "P-01",
@@ -75,6 +75,6 @@
   ],
   "package": {
     "path": "dcos/public-context/chatgpt-context-package.md",
-    "sha256": "5b1c892d4c5ccf5bc562d3b9ba952fc01944e43d026d6a8d9499632f3c29d026"
+    "sha256": "a33b4fbf603c4e409beaabdd4cdc92d0f3e56d132245f1f31655d7f1250cd2b3"
   }
 }
