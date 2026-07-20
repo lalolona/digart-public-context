@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-20T10:51:18.000Z
+**Generado:** 2026-07-20T11:59:18.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** c43af751b7fc6c744ace07c0f519258baec14666
+**Commit de origen:** ecec63ec74d72f158ffed355579b257f4b03ffc0
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -74,21 +74,18 @@ El sprint "Analytics + SEO técnico + preparación para producción v1.0" está 
 
 ## Sprint / siguiente paso vigente
 
-Sprint de infraestructura, bloque de despliegue de producción y bloque de correcciones cerrados. El propietario debe autorizar el siguiente bloque: mapa y aplicación de redirecciones 301 desde las URLs anteriores de WordPress, verificación de Search Console y envío del sitemap (ver O-04).
+Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones y bloque de normalización canónica cerrados. El propietario debe autorizar el siguiente bloque: verificación de Search Console y envío del sitemap (ver O-04).
 
 **Pendientes priorizados vigentes (O-04):**
 
 - Desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados.
-2. Mapear y aplicar las redirecciones 301 desde las URLs anteriores de WordPress.
-3. Verificar la propiedad del sitio en Search Console y enviar `https://digart.mx/sitemap.xml`.
-4. Dar seguimiento a la cobertura e indexación en Search Console tras el envío del sitemap.
-5. Ejecutar el cierre certificado del estado documental vigente y publicar el Public Context Package correspondiente.
-6. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx` (staging, no modificado por el despliegue de producción).
-7. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
+2. Verificar la propiedad del sitio en Search Console y enviar `https://digart.mx/sitemap.xml`.
+3. Dar seguimiento a la cobertura e indexación en Search Console tras el envío del sitemap.
+4. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx` (staging, no modificado por el despliegue de producción).
+5. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
 
 ## Implementaciones concluidas relevantes
 
-- **D-046** — Se aprueba Contacto v2 — **D-046**: formulario de proyecto con envío SMTP autenticado, sin base de datos, configuración de credenciales fuera de Git y controles mínimos de seguridad y privacidad. Implementados localmente el rediseño de `public/contacto.php` (H…
 - **D-047** — Se aprueba Portafolio v1 — **D-047**: vitrina editorial de seis casos reales, implementada localmente en `public/portafolio.php` mediante los Patterns `portfolio-hero`, `portfolio-introduction`, `portfolio-grid` y `portfolio-closing`. Se integran los seis recu…
 - **D-048** — Se aprueba el cierre de la expansión visual de Especialidades y la renovación visual del Home — **D-048**. Las páginas DIGART Business, DIGART Medical y DIGART Food integran sus recursos finales WebP; la Home incorpora recursos finales WebP para Hero, El inici…
 - **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
@@ -96,6 +93,7 @@ Sprint de infraestructura, bloque de despliegue de producción y bloque de corre
 - **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
 - **D-052** — Se certifica el despliegue de DIGART.MX HTML en producción (`https://digart.mx`) — **D-052**, ejecutando sobre producción real los pendientes de configuración externa que D-051 había dejado abiertos. La decisión aprueba conjuntamente: (a) el retiro del WordPre…
 - **D-053** — Se certifica el despliegue en producción de un bloque de correcciones sobre Especialidades, Home y Contacto — **D-053**. La decisión aprueba conjuntamente: (a) la incorporación de un campo de teléfono obligatorio (`name="phone"`, `type="tel"`) al formulario de…
+- **D-054** — Se certifica la normalización canónica del dominio y el tratamiento de URLs históricas del WordPress retirado — **D-054**, sobre la base de la auditoría no destructiva de dos respaldos completos de cPanel (30 de mayo y 17 de julio de 2026, comparados fila por …
 
 ## Reglas operativas para asistentes de IA
 
