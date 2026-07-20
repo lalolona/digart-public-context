@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-19T15:17:57.000Z
+**Generado:** 2026-07-20T09:13:18.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 9b26207d7b07e380a6da11b4fe291d4994146ed1
+**Commit de origen:** 5e397a8123de98ee3d0d5a3b27ef9875be305f69
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -68,30 +68,26 @@ Derivadas del Framework Profile operativo (`dcos/profiles/digart-framework-profi
 
 ## Estado actual del proyecto
 
-En desarrollo. Sitio Web Corporativo digart.mx. Rama Git activa: `feature/navigation-v2`. La navegación v2, las páginas institucionales, Especialidades y el Blog Editorial v2 están implementados localmente. El sprint del Blog Editorial v2 queda cerrado con validación técnica (60/60 pruebas) y visual Desktop/Mobile aprobada. La infraestructura de Analytics + SEO técnico + preparación para producción v1.0 queda implementada y certificada mediante cierre certificado de DCOS — **D-051**: runtime y configuración centralizada por entorno, Google Tag Manager preparado sin IDs reales, consentimiento denegado por defecto y SEO técnico completo, sin recopilación activa en local ni en `html.digart.mx`.
+En producción. Sitio Web Corporativo digart.mx. Rama Git activa: `feature/navigation-v2`. La navegación v2, las páginas institucionales, Especialidades y el Blog Editorial v2 están implementados. El sprint del Blog Editorial v2 queda cerrado con validación técnica (60/60 pruebas) y visual Desktop/Mobile aprobada. La infraestructura de Analytics + SEO técnico + preparación para producción v1.0 queda implementada y certificada mediante cierre certificado de DCOS — **D-051**. DIGART.MX HTML queda desplegado y validado en `https://digart.mx` — **D-052**: WordPress anterior retirado de `public_html` (base de datos conservada para rollback o consulta), `.well-known` preservado, GTM-P6TS7HC5 y GA4 G-V5Q3ZYLWK5 activos con recepción real de eventos comerciales y `generate_lead` como evento clave, consentimiento y SEO técnico operativos en producción real, `html.digart.mx` intacto.
 
 El sprint "Analytics + SEO técnico + preparación para producción v1.0" está **cerrado** (O-02).
 
 ## Sprint / siguiente paso vigente
 
-Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente sprint (configuración externa de Google y Release Candidate de producción — ver O-04).
+Sprint de infraestructura y bloque de despliegue de producción cerrados. El propietario debe autorizar el siguiente bloque: mapa y aplicación de redirecciones 301 desde las URLs anteriores de WordPress, verificación de Search Console y envío del sitemap (ver O-04).
 
 **Pendientes priorizados vigentes (O-04):**
 
 - Desarrollar rutas individuales de Portafolio cuando exista alcance y contenido aprobados.
-- Crear la propiedad GA4 y su flujo web.
-3. Crear el contenedor de Google Tag Manager.
-4. Configurar etiquetas y eventos clave dentro de GTM.
-5. Proporcionar los IDs reales mediante `config/site.local.php` (fuera de Git, nunca en el repositorio).
-6. Verificar la propiedad del sitio en Search Console y enviar el sitemap.
-7. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx`.
-8. Validar Analytics y Consent Mode con herramientas de Google (Tag Assistant, DebugView).
-9. Ejecutar el Release Candidate de producción.
-10. Preparar las redirecciones desde el WordPress anterior.
+2. Mapear y aplicar las redirecciones 301 desde las URLs anteriores de WordPress.
+3. Verificar la propiedad del sitio en Search Console y enviar `https://digart.mx/sitemap.xml`.
+4. Dar seguimiento a la cobertura e indexación en Search Console tras el envío del sitemap.
+5. Ejecutar el cierre certificado del estado documental vigente y publicar el Public Context Package correspondiente.
+6. Validar `robots.txt` y `sitemap.xml` en `html.digart.mx` (staging, no modificado por el despliegue de producción).
+7. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
 
 ## Implementaciones concluidas relevantes
 
-- **D-044** — DCOS Framework Profile se alinea con el Mapa de Autoridad oficial de G-02 §5 — **D-044**. El perfil deja de usar autoridades heredadas y declara exclusivamente las catorce autoridades canónicas del corpus vigente.
 - **D-045** — Se aprueba Blog editorial basado en Markdown v1 — **D-045**: publicaciones administradas como archivos versionados en `content/blog/`, índice automático (`public/blog.php`) y una plantilla reutilizable de artículo (`public/articulo.php`); sin base de datos ni …
 - **D-046** — Se aprueba Contacto v2 — **D-046**: formulario de proyecto con envío SMTP autenticado, sin base de datos, configuración de credenciales fuera de Git y controles mínimos de seguridad y privacidad. Implementados localmente el rediseño de `public/contacto.php` (H…
 - **D-047** — Se aprueba Portafolio v1 — **D-047**: vitrina editorial de seis casos reales, implementada localmente en `public/portafolio.php` mediante los Patterns `portfolio-hero`, `portfolio-introduction`, `portfolio-grid` y `portfolio-closing`. Se integran los seis recu…
@@ -99,6 +95,7 @@ Sprint cerrado. Requiere autorización del propietario para iniciar el siguiente
 - **D-049** — Se aprueba la incorporación normativa del remapeo Responsive RWD-08 y la revisión formal de C-01 — **D-049**. La decisión aprueba conjuntamente: (a) la incorporación de la norma de remapeo de spans a P-02 §16 ("en Tablet y Mobile, toda utilidad de columna basa…
 - **D-050** — Adopción del cierre certificado de DCOS — **D-050**. La decisión sustituye, para todo sprint o implementación que actualice el estado público, el cierre desacoplado de D-035 por una sola operación controlada que integra QA, SGD, SSD, validación semántica de O-…
 - **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
+- **D-052** — Se certifica el despliegue de DIGART.MX HTML en producción (`https://digart.mx`) — **D-052**, ejecutando sobre producción real los pendientes de configuración externa que D-051 había dejado abiertos. La decisión aprueba conjuntamente: (a) el retiro del WordPre…
 
 ## Reglas operativas para asistentes de IA
 
