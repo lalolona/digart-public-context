@@ -5,9 +5,9 @@
 **Consumidor objetivo:** ChatGPT (rol Conductor, C-02 §9)
 **Clasificación:** Público — seguro para enlace RAW de GitHub
 **Versión de formato:** 1.0
-**Generado:** 2026-07-20T19:09:11.000Z
+**Generado:** 2026-07-21T00:28:58.000Z
 **Rama de origen:** feature/navigation-v2
-**Commit de origen:** 17c7a10d07d3fbf1160a7f42e3c65a67afa66197
+**Commit de origen:** 7216652d3828416dfab7cd876ceb2106c7eca871
 
 > Archivo generado automáticamente. No editar manualmente. Regenerar desde la raíz del repositorio con `npm.cmd run public-context:chatgpt --prefix dcos` en Windows o `npm run public-context:chatgpt --prefix dcos` en otros entornos.
 
@@ -23,7 +23,7 @@
 
 | Fuente | Ruta | Huella |
 |---|---|---|
-| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `5117749fcbc1` |
+| C-01 | `project/01-CONSTITUTION/C-01-IDENTITY.md` | `da68cb345b5c` |
 | C-02 | `project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md` | `bbfb3fba21e0` |
 | G-03 | `project/02-GOVERNANCE/G-03-METHODOLOGY.md` | `c4c7e42a78d8` |
 | P-01 | `project/03-PRODUCT/P-01-SYSTEM-ARCHITECTURE.md` | `ef1e2b5c4465` |
@@ -38,6 +38,8 @@ Este documento es una síntesis compacta del conocimiento vigente de digart.mx, 
 DIGART Studio existe para ayudar a personas y organizaciones a comunicar mejor quiénes son; su producto real es la confianza que sus entregables hacen visible, no los entregables mismos. Dieciocho Principios Fundacionales (C-01 §8, no reproducidos aquí) rigen toda decisión de producto, marca o proceso.
 
 **Arquitectura comercial aprobada:** DIGART Studio es la marca principal, el negocio principal y el punto único de entrada del ecosistema. Clientes de Mostrador es la línea de negocio permanente y estratégica atendida directamente por DIGART Studio. DIGART Business, DIGART Medical y DIGART Food son capacidades especializadas que se activan según el proyecto; no son unidades paralelas ni de igual jerarquía.
+
+**Extensión a redes sociales (C-01 §13, D-060):** la identidad institucional se extiende a los canales oficiales de Facebook e Instagram, que deben conservar coherencia visual con digart.mx bajo una estética premium, contemporánea y editorial. El logotipo oficial se usa fielmente, sin reinterpretarlo ni redibujarlo; las piezas generadas pueden producirse sin logotipo para aplicarlo después con el archivo oficial. Esta extensión es de identidad y coherencia visual: no constituye ni autoriza campañas publicitarias, Meta Ads ni automatización de RRSS.
 
 ## Arquitectura técnica vigente
 
@@ -74,7 +76,7 @@ El sprint "Analytics + SEO técnico + preparación para producción v1.0" está 
 
 ## Sprint / siguiente paso vigente
 
-Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console, bloque de la página 404 personalizada, bloque de retiro de html.digart.mx y bloque de retiro del clon obsoleto del servidor cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
+Sprint de infraestructura, bloque de despliegue de producción, bloque de correcciones, bloque de normalización canónica, bloque de Search Console, bloque de la página 404 personalizada, bloque de retiro de html.digart.mx, bloque de retiro del clon obsoleto del servidor y bloque de alineación de marca en redes sociales cerrados. El propietario debe dar seguimiento a la indexación real y a la canonical seleccionada por Google en próximos rastreos, y a los pendientes de Instagram (ver O-04); no se requiere autorización de un bloque nuevo por el momento.
 
 **Pendientes priorizados vigentes (O-04):**
 
@@ -86,17 +88,22 @@ Sprint de infraestructura, bloque de despliegue de producción, bloque de correc
 6. Revisar Core Web Vitals y rendimiento en Search Console cuando acumule datos suficientes.
 7. Validar en una fecha posterior si las URLs históricas 301 y 410 aparecen correctamente procesadas por Google.
 8. Revisar, solo si el hosting lo requiere, permisos/grupo del document root de producción (`[dato omitido]/public_html`).
+9. Publicar y fijar en Instagram (@digart.studio) las dos piezas institucionales restantes de la primera fila de la cuadrícula principal ("Qué hacemos" y "Especialidades").
+10. Desarrollar los destacados de Instagram (Servicios, Business, Medical, Food, Proyectos, Contacto): portadas e historias iniciales.
+11. Revisar qué publicaciones históricas de Instagram conviene archivar.
+- Formalizar posteriormente el sistema de contenidos y campañas de redes sociales de DIGART Studio: calendario editorial, formatos, flujo de aprobación y medición.
+2. Implementar integraciones técnicas de campañas (Meta Ads, Pixel de Meta, Conversions API u otras) únicamente mediante una decisión oficial futura.
 
 ## Implementaciones concluidas relevantes
 
-- **D-051** — Se certifica el cierre de Analytics + SEO técnico + preparación para producción v1.0 — **D-051**, conforme al flujo de cierre certificado de DCOS adoptado por D-050. La infraestructura implementa: runtime y configuración centralizada por entorno (`src/lib/site…
-- **D-052** — Se certifica el despliegue de DIGART.MX HTML en producción (`https://digart.mx`) — **D-052**, ejecutando sobre producción real los pendientes de configuración externa que D-051 había dejado abiertos. La decisión aprueba conjuntamente: (a) el retiro del WordPre…
 - **D-053** — Se certifica el despliegue en producción de un bloque de correcciones sobre Especialidades, Home y Contacto — **D-053**. La decisión aprueba conjuntamente: (a) la incorporación de un campo de teléfono obligatorio (`name="phone"`, `type="tel"`) al formulario de…
 - **D-054** — Se certifica la normalización canónica del dominio y el tratamiento de URLs históricas del WordPress retirado — **D-054**, sobre la base de la auditoría no destructiva de dos respaldos completos de cPanel (30 de mayo y 17 de julio de 2026, comparados fila por …
 - **D-055** — Se certifica el cierre del bloque de Google Search Console y la validación en tiempo real de la canonicalización de la Home — **D-055**. La decisión aprueba conjuntamente: (a) la creación y verificación de la propiedad de dominio `digart.mx` en Google Search C…
 - **D-056** — Se certifica la activación en producción de la página 404 personalizada — **D-056**. La decisión aprueba conjuntamente: (a) la incorporación de la directiva `ErrorDocument 404 /404.php` en `public/.htaccess` (nueva sección 5, reescritura interna sin redirecció…
 - **D-057** — Se certifica el retiro controlado del subdominio de staging `html.digart.mx` — **D-057**. Auditoría previa (misma fecha): document root en `[dato omitido]/html.digart.mx`, vacío de contenido real (solo `cgi-bin/` y `.well-known/acme-challenge/` autogenerados p…
 - **D-058** — Se certifica el retiro controlado del clon obsoleto del servidor `~/repositories/digart.mx` — **D-058**. Auditoría previa (misma fecha): rama `feature/navigation-v2` en el commit `62ec51bbe4c7ccec3ab6fae2774245815b39f350`, confirmado ancestro directo de `HEAD`…
+- **D-059** — Se certifica la alineación de marca de DIGART Studio en Facebook e Instagram y se fija la dirección editorial oficial para redes sociales — **D-059**. Facebook (página "DIGART Studio") queda alineado con la identidad vigente: nombre, foto de perfil y portada a…
+- **D-060** — Se aprueba la unificación visual de la presencia institucional de DIGART Studio en Facebook e Instagram con la identidad vigente del sitio digart.mx, extendiendo formalmente C-01 §13 — **D-060**. Ambos canales quedan alineados bajo una misma dirección visual: …
 
 ## Reglas operativas para asistentes de IA
 
@@ -111,7 +118,7 @@ Principios de trabajo: Documentation First, Architecture First, Reuse Before Cre
 
 ## Fuentes utilizadas y trazabilidad
 
-- **C-01** (`project/01-CONSTITUTION/C-01-IDENTITY.md`, §3-4, §12) — razón de existir y arquitectura de marca (Principios Fundacionales del §8 solo referenciados, no reproducidos).
+- **C-01** (`project/01-CONSTITUTION/C-01-IDENTITY.md`, §3-4, §12-13) — razón de existir, arquitectura de marca y extensión de la identidad a redes sociales (Principios Fundacionales del §8 solo referenciados, no reproducidos).
 - **C-02** (`project/01-CONSTITUTION/C-02-AI-FRAMEWORK.md`, §7, §9) — directiva de ahorro de tokens y colaboración entre modelos de IA.
 - **G-02** (`project/02-GOVERNANCE/G-02-DOCUMENTATION-ARCHITECTURE.md`, §3-5) — arquitectura y Mapa de Autoridad del corpus (usado para la sección Autoridades).
 - **G-03** (`project/02-GOVERNANCE/G-03-METHODOLOGY.md`, §3, §9) — principios de trabajo y flujo Git.
